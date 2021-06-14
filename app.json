@@ -1,0 +1,12 @@
+{
+  "name": "TinderSwiping",
+  "displayName": "TinderSwiping",
+  "expo": {
+    "name": "TinderSwiping",
+    "slug": "TinderSwiping",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
