@@ -1,21 +1,47 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+// import { AppLoading } from "expo";
+// import { Asset } from "expo-asset";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import { Profiles, type Profile } from "./components";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const profiles: Profile[] = [
+  {
+    id: "1",
+    name: "Caroline",
+    age: 24,
+    profile: require("./assets/profiles/1.jpg"),
   },
-});
+  {
+    id: "2",
+    name: "Jack",
+    age: 30,
+    profile: require("./assets/profiles/2.jpg"),
+  },
+  {
+    id: "3",
+    name: "Anet",
+    age: 21,
+    profile: require("./assets/profiles/3.jpg"),
+  },
+  {
+    id: "4",
+    name: "John",
+    age: 28,
+    profile: require("./assets/profiles/4.jpg"),
+  },
+  {
+    id: "4",
+    name: "John",
+    age: 28,
+    profile: require("./assets/profiles/4.jpg"),
+  },
+];
+const App =()=> {
+ 
+    return (
+      <Profiles {...{ profiles }} />
+    );
+
+  
+}
+export default App;
